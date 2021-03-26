@@ -1,0 +1,5 @@
+@mixin import-font($fontName, $src){
+    font-family: $fontName;
+    src:url('../Fonts/#{$src}.ttf');
+    
+}

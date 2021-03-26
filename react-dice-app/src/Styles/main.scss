@@ -1,0 +1,4 @@
+@use '../Styles/Sass-mixins/mixins.scss';
+
+@include import-font('Gontserrat', 'Gontserrat-Regular');
+@include import-font('Roboto', 'Robot-regular');
