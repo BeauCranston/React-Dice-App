@@ -1,4 +1,6 @@
 
+// I BEAU CRANSTON 000397019, THAT THIS WORK IS MY OWN AND WAS NOT CONTRIBUTED TO BY ANYONE BUT ME. 
+
 import './Styles/App.css';
 import './Styles/main.scss';
 import React, {useState, useEffect} from 'react'
