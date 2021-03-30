@@ -1,4 +1,86 @@
-@use '../Styles/Sass-mixins/mixins.scss';
+@use './Sass-mixins/mixins.scss' as m;
 
-@include import-font('Gontserrat', 'Gontserrat-Regular');
-@include import-font('Roboto', 'Robot-regular');
+@include m.import-font('Gontserrat', 'Gontserrat-Regular');
+@include m.import-font('Roboto', 'Roboto-Regular');
+@include m.import-font('Poxel', 'poxel-font');
+$primary-color:#78ffb7 ;
+$secondary-color:#485373;
+$dark-color:#2e3547;
+body{
+    background-color:$dark-color ;
+}
+//#845EC2
+.header-container{
+    margin-top: 5%;
+    margin-bottom: 3em;
+}
+.title{
+    font-family: Poxel;
+    font-size: 5em;
+    text-align: center;
+    color: $primary-color;
+    font-weight: 300;
+}
+
+.my-button{
+    padding:10px 25px;
+    background-color: white;
+    color: $dark-color;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 600;
+}
+.my-button:hover{
+    background-color: $primary-color;
+}
+
+
+.dice-configuration{
+    color:$primary-color;
+    label{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .dice-config-input{
+        display: flex;
+        align-content: flex-start;
+        span{
+            text-align: center;
+            font-size: 2.5em;
+            margin-left: 1.5em;
+            margin-top: -25px;
+            
+            border-bottom:solid 2px $primary-color;
+            width:35px;
+    
+        }
+        input{
+            margin-top: 10px;
+        }
+    }
+}
+
+.die{
+    display: flex;
+    width: 100px;
+    height:100px;
+    background-color: #84c2a9;
+    align-items: center;
+    justify-content: center;
+    span{
+        font-size: 3em;
+        
+        color: white;
+    }
+}
+
+.render-box{
+    margin-top: 5%;
+    h2{
+        font-size: 4em;
+        color: $primary-color;
+        text-align: center;
+        margin-top: 2em;
+    }
+}
+
